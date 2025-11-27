@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kolaborasi IX-2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <img src="IL WEB KOLABORASI - Banner (4)_waifu2x_noise1_scale4x.png" alt="Banner" class="header-img">
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li class="dropdown">
+                <a href="#">SDGs ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#SDGs">Pengertian Dan Tujuan SDGs</a></li>
+                    <li><a href="#sdg4">Analisis SDGS No. 4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Kerja Sama ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#KerjaSama">Pengertian Kerja Sama Internasional</a></li>
+                    <li><a href="#Bilateral">Bilateral</a></li>
+                    <li><a href="#Regional">Regional</a></li>
+                    <li><a href="#Multilateral">Multilateral</a></li>
+                </ul>
+            
+            </li>
+            <li class="dropdown">
+                <a href="#">Refleksi ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#Kesimpulan">Kesimpulan</a></li>
+                    <li><a href="#Saya">Tentang saya</a></li>
+                </ul>
+            </li>
+            <li><a href="#DaftarPustaka">Daftar Pustaka</a></li>
+        </ul>
+    </nav>
+
+    <section class="front-grid">
+        <div class="image-col left">
+            <img src="sdgs.jpeg" alt="Image 1" class="grid-img">
+            <img src="sdgs2.jpg" alt="Image 2" class="grid-img">
+            <img src="sdgs5" alt="Image 5" class="grid-img">
+            <img src="sdgs6.jpg" alt="Image 6" class="grid-img">
+        </div>
+
+        <div class="opening-box">
+            <h1>Selamat datang di Web saya!</h1>
+            <p>Selamat datang di website ini, tempat saya membagikan penjelasan yang jelas dan 
+                mudah dipahami mengenai peran Indonesia dalam mendukung Sustainable Development 
+                Goals (SDGs) melalui berbagai bentuk kerja sama internasional. Mulai dari upaya 
+                mengakhiri kemiskinan, meningkatkan kualitas pendidikan, hingga melindungi 
+                lingkungan, SDGs terdiri atas 17 target global yang disepakati negara-negara di 
+                dunia, termasuk Indonesia, untuk dicapai pada tahun 2030. Di sini, kamu dapat 
+                menemukan penjelasan tentang apa itu SDGs, mengapa SDGs penting, tantangan yang 
+                saat ini dihadapi Indonesia (seperti learning poverty, ketimpangan akses pendidikan, 
+                serta dampak pandemi COVID-19), dan bagaimana berbagai sektor berkontribusi dalam 
+                menciptakan pembangunan yang berkelanjutan.</p>
+            <p>Kamu juga akan melihat bagaimana Indonesia menjalin kerja sama dengan negara lain 
+                melalui hubungan bilateral, regional, dan multilateral. Baik melalui kolaborasi 
+                dengan Jepang di bidang teknologi, keterlibatan dalam program-program ASEAN, maupun 
+                partisipasi aktif dalam lembaga global seperti PBB dan WHO, Indonesia terus mengambil 
+                bagian dalam upaya bersama untuk menghadapi isu-isu dunia. Website ini menyajikan 
+                wawasan, contoh nyata, serta tindakan praktis yang dapat dilakukan oleh pemerintah, 
+                masyarakat, maupun individu untuk mewujudkan tujuan SDGs. Semoga informasi yang ada 
+                dapat membantu kamu memahami tidak hanya tujuan-tujuannya, tetapi juga bagaimana 
+                kerja sama internasional membentuk masa depan yang lebih baik bagi semua.</p>
+        </div>
+
+        <div class="image-col right">
+            <img src="kerjasama1.jpg" alt="Image 3" class="grid-img">
+            <img src="kerjasama2.jpg" alt="Image 4" class="grid-img">
+            <img src="kerjasama5.jpg" alt="Image 7" class="grid-img">
+            <img src="kerjasama6.jpg" alt="Image 8" class="grid-img">
+        </div>
+    </section>
+
+<section id="SDGs" class="sdgs-section">
+    <div class="sdgs-intro">
+        <h1>Apa itu SDGs?</h1>
+        <p>Sustainable Development Goals (SDGs), atau Tujuan Pembangunan Berkelanjutan, adalah serangkaian tujuan global yang dicanangkan oleh PBB pada tahun 2015 untuk mengakhiri kemiskinan, melindungi lingkungan, dan memastikan kemakmuran bagi semua.</p>
+        <div class="divider"></div>
+        <p class="goals-title"><strong>Berikut ini merupakan tujuan-tujuan SDGs:</strong></p>
+    </div>
+
+    <div class="sdgs-grid">
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>1</span><h3>Tanpa Kemiskinan</h3></div>
+            <div class="sdg-desc"><p>Memastikan semua orang, termasuk mereka yang hidup dalam kemiskinan, memiliki hak dan akses terhadap sumber daya ekonomi, pelayanan dasar, serta terlindungi dari dampak bencana seperti ekonomi, sosial, dan lingkungan.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>2</span><h3>Tanpa Kelaparan</h3></div>
+            <div class="sdg-desc"><p>Mengakhiri kelaparan dan segala bentuk kekurangan gizi, serta mencapai ketahanan pangan berkelanjutan bagi semua orang. Ini termasuk mempromosikan pertanian berkelanjutan serta meningkatkan pendapatan petani kecil.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>3</span><h3>Kehidupan Sehat dan Sejahtera</h3></div>
+            <div class="sdg-desc"><p>Memastikan kehidupan yang sehat dan mendukung kesejahteraan bagi semua orang di segala usia. Tujuan ini mencakup pengurangan angka kematian ibu dan anak, pemberantasan penyakit menular, dan penguatan sistem kesehatan.</p></div>
+        </div>
+
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>4</span><h3>Pendidikan Berkualitas</h3></div>
+            <div class="sdg-desc"><p>Memastikan pendidikan yang inklusif dan berkualitas setara bagi semua, serta mempromosikan kesempatan belajar seumur hidup. Pendidikan adalah pondasi untuk meningkatkan kehidupan dan pembangunan berkelanjutan.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>5</span><h3>Kesetaraan Gender</h3></div>
+            <div class="sdg-desc"><p>Mencapai kesetaraan gender dan memberdayakan semua perempuan dan anak perempuan. Tujuan ini berfokus pada mengakhiri diskriminasi, kekerasan, dan praktik berbahaya terhadap perempuan, serta memastikan partisipasi penuh dan setara dalam kepemimpinan.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>6</span><h3>Air Bersih dan Sanitasi Layak</h3></div>
+            <div class="sdg-desc"><p>Menjamin ketersediaan dan pengelolaan air bersih serta sanitasi yang berkelanjutan untuk semua. Akses ke air bersih dan sanitasi adalah hak asasi manusia yang mendasar.</p></div>
+        </div>
+
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>7</span><h3>Energi Bersih dan Terjangkau</h3></div>
+            <div class="sdg-desc"><p>Memastikan akses terhadap energi yang terjangkau, andal, berkelanjutan, dan modern untuk semua. Transisi ke energi terbarukan sangat penting untuk melawan perubahan iklim.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>8</span><h3>Pekerjaan Layak dan Pertumbuhan Ekonomi</h3></div>
+            <div class="sdg-desc"><p>Mempromosikan pertumbuhan ekonomi yang berkelanjutan dan inklusif, kesempatan kerja penuh dan produktif, serta pekerjaan yang layak bagi semua. Pertumbuhan ekonomi harus memberikan manfaat bagi seluruh masyarakat.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>9</span><h3>Industri, Inovasi, dan Infrastruktur</h3></div>
+            <div class="sdg-desc"><p>Membangun infrastruktur yang tangguh, mempromosikan industrialisasi yang inklusif dan berkelanjutan, serta mendorong inovasi. Infrastruktur yang baik adalah tulang punggung pembangunan ekonomi.</p></div>
+        </div>
+
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>10</span><h3>Berkurangnya Kesenjangan</h3></div>
+            <div class="sdg-desc"><p>Mengurangi kesenjangan di dalam dan antar negara. Kesenjangan pendapatan dan akses adalah tantangan global yang membutuhkan kebijakan yang inklusif.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>11</span><h3>Kota dan Komunitas Berkelanjutan</h3></div>
+            <div class="sdg-desc"><p>Membuat kota dan pemukiman manusia inklusif, aman, tangguh, dan berkelanjutan. Dengan lebih dari separuh populasi dunia tinggal di kota, perkotaan yang terkelola dengan baik sangat penting.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>12</span><h3>Konsumsi dan Produksi yang Bertanggung Jawab</h3></div>
+            <div class="sdg-desc"><p>Memastikan pola konsumsi dan produksi yang berkelanjutan. Ini tentang melakukan lebih banyak dan lebih baik dengan sumber daya yang lebih sedikit dan mengurangi limbah.</p></div>
+        </div>
+
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>13</span><h3>Penanganan Perubahan Iklim</h3></div>
+            <div class="sdg-desc"><p>Mengambil tindakan segera untuk memerangi perubahan iklim dan dampaknya. Perubahan iklim adalah ancaman global yang membutuhkan respons kolektif yang cepat dan ambisius.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>14</span><h3>Ekosistem Laut</h3></div>
+            <div class="sdg-desc"><p>Melestarikan dan memanfaatkan secara berkelanjutan sumber daya samudera, laut, dan maritim untuk pembangunan berkelanjutan. Lautan adalah kunci untuk ketahanan pangan dan regulasi iklim global.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>15</span><h3>Ekosistem Daratan</h3></div>
+            <div class="sdg-desc"><p>Melindungi, memulihkan, dan mempromosikan pemanfaatan berkelanjutan ekosistem daratan, mengelola hutan secara berkelanjutan, memerangi desertifikasi (penggurunan), dan menghentikan serta memulihkan degradasi lahan dan keanekaragaman hayati.</p></div>
+        </div>
+
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>16</span><h3>Perdamaian, Keadilan, dan Kelembagaan yang Tangguh</h3></div>
+            <div class="sdg-desc"><p>Mempromosikan masyarakat yang damai dan inklusif untuk pembangunan berkelanjutan, menyediakan akses keadilan untuk semua, dan membangun institusi yang efektif, akuntabel, dan inklusif di semua tingkat. Perdamaian dan keadilan adalah prasyarat untuk pembangunan berkelanjutan.</p></div>
+        </div>
+
+        <div class="sdg-card" onclick="toggleDescription(this)">
+            <div class="sdg-header"><span>17</span><h3>Kemitraan untuk Mencapai Tujuan</h3></div>
+            <div class="sdg-desc"><p>Memperkuat sarana pelaksanaan dan merevitalisasi kemitraan global untuk pembangunan berkelanjutan. Tujuan ini adalah tentang bagaimana kita bekerja sama melalui pendanaan, teknologi, kerjasama internasional, dan kebijakan untuk mencapai semua tujuan lainnya.</p></div>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        function toggleDescription(card) {
+            document.querySelectorAll('.sdg-card').forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.classList.remove('active');
+                }
+            });
+            card.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.sdg-card')) {
+                document.querySelectorAll('.sdg-card').forEach(card => {
+                    card.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+<section id="sdg4" class="sdg-section">
+    <div class="sdg-container">
+        <div class="sdg-header">
+            <div class="sdg-icon">🎓</div>
+            <h1>SDG 4 - Pendidikan Berkualitas</h1>
+            <p>Analisis Mendalam tentang Tantangan dan Solusi Pendidikan di Indonesia</p>
+        </div>
+
+        <div class="detail-box condition-box">
+            <h2>📊 Informasi kondisi saat ini (SDGS no 4.)</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>1. Kesenjangan Partisipasi</h3>
+                    <p>Dari setiap 100 anak usia SMA, hanya 60 yang benar-benar bersekolah dan ingin belajar, 40 lainnya keluar dari sekolah ataupun tidak pernah dapat bersekolah. Hal ini menunjukkan adanya kesenjangan akses dan partisipasi pendidikan, terutama di daerah terpencil dan keluarga berpenghasilan rendah.</p>
+                </div>
+                <div class="info-card">
+                    <h3>2. Dampak pandemi</h3>
+                    <p>Pandemi COVID-19 menyebabkan learning loss atau kehilangan pembelajaran yang setara dengan sekitar 1 tahun pembelajaran penuh. Dampak terparah dirasakan oleh siswa dari keluarga miskin karena keterbatasan akses terhadap teknologi dan internet selama pembelajaran daring.</p>
+                </div>
+                <div class="info-card">
+                    <h3>3. Learning poverty</h3>
+                    <p>Berdasarkan laporan dari World Bank (2024) menyatakan bahwa 55% anak berusia <10 tahun di Indonesia mengalami learning poverty yaitu ketidakmampuan untuk membaca serta memahami teks sederhana. Hal ini menjadi pondasi yang rapuh bagi pendidikan selanjutnya.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-box challenge-box">
+            <h2>🚧 Tantangannya</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>1. Ekonomi</h3>
+                    <p>Tidak semua daerah mempunyai anggaran pendidikan yang setara. Akibatnya, fasilitas sekolah dan kesejahteraan guru berbeda-beda. Selain itu, biaya lain seperti transportasi, seragam, buku-buku, serta les juga sering jadi penghalang bagi keluarga yang kurang mampu.</p>
+                </div>
+                <div class="info-card">
+                    <h3>2. Sosial dan Budaya</h3>
+                    <p>Di beberapa daerah, masih sering terjadinya pernikahan dini dimana ada anggapan bahwa anak harus cepat bekerja agar dapat membantu keluarga. Hal tersebut mengakibatkan banyak anak putus sekolah lebih cepat.</p>
+                </div>
+                <div class="info-card">
+                    <h3>3. Tata kelola dan kebijakan</h3>
+                    <p>Seringnya perubahan kurikulum membuat guru dan sekolah bingung menyesuaikan diri. Selain itu, kualitas guru belum merata karena sistem rekrutmen dan penempatan guru belum berjalan baik di semua daerah.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-box potential-box">
+            <h2>🌟 Potensi</h2>
+            <div class="potential-grid">
+                <div class="potential-card">
+                    <h3>1. Dengan banyaknya penduduk usia muda, Indonesia mempunyai kesempatan besar untuk menjadikan mereka sebagai guru, relawan, dan innovator di dunia pendidikan.</h3>
+                </div>
+                <div class="potential-card">
+                    <h3>2. Teknologi semakin maju, misalnya dengan satelit SATRIA-1 yang memperluas akses internet sehingga ke daerah sulit dijangkau. Membantu membuka peluang belajar yang disesuaikan dan memperluas jangkauan pendidikan berkualitas.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-box role-box">
+            <h2>Peran Masyarakat</h2>
+            <div class="role-grid">
+                <div class="role-card">
+                    <div class="card-icon">📺</div>
+                    <h3>1. Media massa</h3>
+                    <p>mempunyai peran penting untuk menyebarkan informasi dan praktik baik terkait pendidikan, serta menjalankan fungsi pengawasan sosial terhadap kebijakan pendidikan.</p>
+                </div>
+                <div class="role-card">
+                    <div class="card-icon">🏠</div>
+                    <h3>2. Keluarga/Orang tua</h3>
+                    <p>perlu menjadi mitra aktif sekolah; mendukung literasi di rumah, memastikan anak tetap bersekolah, dan menciptakan lingkungan belajar di rumah.</p>
+                </div>
+                <div class="role-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>3. Program Sosial</h3>
+                    <p>Membuat program sosial seperti beasiswa, pembangunan perpustakaan, ataupun pelatihan guru agar pendidikan semakin merata dan berkualitas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-box solution-box">
+            <h2>💡 Solusi dan rekomendasi</h2>
+            <div class="solution-content">
+                <div class="solution-category">
+                    <div class="category-header">
+                        <div class="card-icon">🏛️</div>
+                        <h3>Pemerintah Pusat dan Daerah</h3>
+                    </div>
+                    <ul>
+                        <li>Menyediakan beasiswa dan program bantuan keluarga untuk anak dari keluarga yang berpenghasilan rendah agar tidak putus sekolah</li>
+                        <li>Menyediakan anggaran lebih besar untuk pelatihan guru berbasis kompetensi serta metode pembelajaran yang berbeda-beda agar pengajaran menjadi lebih efektif</li>
+                        <li>Meningkatkan infrastruktur pendidikan dimana pemerintah menyediakan perpustakaan, fasilitas belajar berbasis digital, dan dukungan internet di sekolah-sekolah terpencil</li>
+                        <li>Menstabilkan kurikulum agar tidak sering berubah, sehingga guru dan sekolah tidak terus menerus menyesuaikan dengan sistem baru</li>
+                    </ul>
+                </div>
+                <div class="solution-category">
+                    <div class="category-header">
+                        <div class="card-icon">🏫</div>
+                        <h3>Sekolah</h3>
+                    </div>
+                    <ul>
+                        <li>Menyediakan pelatihan literasi digital bagi siswa-siswi serta guru agar bisa memanfaatkan teknologi sebagai alat pembelajaran</li>
+                        <li>Mengimplementasikan dan mendistribusikan materi belajar digital yang sesuai dengan kurikulum dan dapat diakses tanpa bergantung pada koneksi internet yang tinggi</li>
+                    </ul>
+                </div>
+                <div class="solution-category">
+                    <div class="category-header">
+                        <div class="card-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Orang tua dan Masyarakat</h3>
+                    </div>
+                    <ul>
+                        <li>Menggalang dana komunitas untuk beasiswa lokal, pembelian buku, seragam, dan lain-lainnya</li>
+                        <li>Masyarakat yang aktif dalam media harus meningkatkan advokasi tentang pentingnya pendidikan berkualitas, terutama di wilayah yang kurang terjangkau, serta mendorong keterlibatan publik dalam pendidikan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-box action-box">
+            <h2>🌍 Tindakan nyata yang dapat dilakukan untuk mencapai tujuan sdgs yang anda pilih</h2>
+            <div class="action-content">
+                <div class="action-category">
+                    <div class="category-header">
+                        <div class="card-icon">🌐</div>
+                        <h3>Semua Negara</h3>
+                    </div>
+                    <ul>
+                        <li>Membuat dan menjalankan program pemulihan pembelajaran pasca COVID-19 yang berfokus pada keterampilan dasar seperti literasi dan numerasi. Hal ini penting karena menurut WORLD BANK, pandemi memperparah krisis pembelajaran global</li>
+                        <li>Banyak negara seperti Jepang, Korea, Finlandia, Malaysia dan beberapa negara Eropa yang membebaskan biaya sekolah dasar-SMA agar semua anak termasuk anak yang berasal dari keluarga yang tidak mampu dapat sekolah dan tidak tertahan karena biaya</li>
+                        <li>Mengadakan pendidikan untuk meningkatkan kualitas guru secara besar-besaran dimana adanya pelatihan rutin tentang metode mengajar modern, pengadaan workshop digital learning, sertifikasi profesi guru, serta memberikan kenaikan gaji untuk guru berprestasi</li>
+                        <li>Banyak negara sudah mengadakan pendidikan inklusif untuk anak yang berbutuhan khusus, dimana mereka sudah membangun sekolah inklusi, mengadakan guru pendamping khusus, menyediakan ruang khusus, alat bantu membaca, alat bantu komunikasi, serta pelatihan guru tentang kesetaraan kelas</li>
+                    </ul>
+                </div>
+                <div class="action-category">
+                    <div class="category-header">
+                        <div class="card-icon">🇮🇩</div>
+                        <h3>Indonesia</h3>
+                    </div>
+                    <ul>
+                        <li>Memprioritaskan pengembangan guru di daerah yang kurang mampu dan terpencil melalui pelatihan intensif literasi dan pengajaran berbasis kompetensi</li>
+                        <li>Setiap tahun, pemerintah memperbaiki sekolah-sekolah yang sudah rusak, khusunya di daerah terpencil. Dimana bangunan-bangunan diperkuat serta fasilitas dasar seperti toilet diperbaiki</li>
+                        <li>Indonesia mulai memperluas digitalisasi pendidikan melalui penyediaan Laptop atau Chromebook ke beberapa sekolah dan penggunaan platform daring. Teknologi tersebut membantu murid-murid belajar materi tambahan secara mandiri dan membantu guru menemukan materi dan perangkat yang sudah siap pakai</li>
+                        <li>Indonesia harus meningkatkan relevansi pendidikan dengan menyesuaikan sebagian materi pelajaran dengan karakteristik daerah. Semisalnya di sekolah daerah pesisir dapat mempelajari keterampilan maritim, sedangkan daerah pertanian dapat fokus pada teknologi pertanian</li>
+                        <li>Pemerintah perlu memperluas program untuk menciptakan sekolah yang aman dari adanya bullying. Dimana sekolah sebaiknya memiliki konselor, mekanisme pelaporan yang aman, serta edukasi rutin tentang pentingnya lingkungan belajar yang sehat. Ketika murid-murid merasa aman, mereka akan belajar lebih giat dan fokus serta tidak takut untuk datang ke sekolah</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-to-sdgs">
+            <a href="#SDGs">⬆ Kembali ke Daftar SDGs</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="KerjaSama" class="kerjasama-section">
+    <div class="kerjasama-container">
+        <div class="kerjasama-header">
+            <h1>Kerja Sama Internasional</h1>
+            <p>Bentuk-bentuk kolaborasi yang dilakukan Indonesia dengan negara lain dalam mendukung pencapaian SDGs</p>
+        </div>
+
+        <div class="kerjasama-images">
+            <div class="kerjasama-img-card">
+                <img src="bilateral2.jpg" alt="Kerja Sama Bilateral">
+                <p>Bilateral</p>
+            </div>
+            <div class="kerjasama-img-card">
+                <img src="regional2.jpg" alt="Kerja Sama Regional">
+                <p>Regional</p>
+            </div>
+            <div class="kerjasama-img-card">
+                <img src="multilateral2.jpg" alt="Kerja Sama Multilateral">
+                <p>Multilateral</p>
+            </div>
+        </div>
+
+        <div id="Bilateral" class="kerjasama-type bilateral-section">
+            <div class="kerjasama-type-header">
+                <h2>Bilateral</h2>
+            </div>
+            
+            <div class="kerjasama-content">
+                <div class="kerjasama-text">
+                    <div class="kerjasama-category">
+                        <h3>📖 Pengertian</h3>
+                        <p>Kerja sama bilateral adalah bentuk kerja sama antara dua negara untuk mencapai tujuan bersama dalam bidang ekonomi, politik, pendidikan, teknologi, atau sektor lainnya.</p>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🎯 Ciri-ciri</h3>
+                        <ul>
+                            <li>Melibatkan hanya dua negara.</li>
+                            <li>Lebih fleksibel karena disesuaikan dengan kepentingan kedua pihak.</li>
+                            <li>Keputusan biasanya lebih cepat karena tidak perlu persetujuan banyak negara.</li>
+                            <li>Fokus pada isu atau kebutuhan spesifik yang ingin dicapai bersama.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>💫 Tujuan dan Manfaat</h3>
+                        <ul>
+                            <li>Meningkatkan perdagangan dan akses ke pasar.</li>
+                            <li>Memperkuat hubungan diplomatik.</li>
+                            <li>Mendapatkan teknologi, investasi, atau bantuan.</li>
+                            <li>Memperluas pertukaran pengetahuan dan pendidikan.</li>
+                            <li>Mendukung stabilitas ekonomi dan keamanan kedua negara.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🌏 Contoh Konkret</h3>
+                        <ul>
+                            <li>Indonesia dan Jepang: kerja sama di bidang teknologi dan industri.</li>
+                            <li>Indonesia dan Thailand: kolaborasi dalam pertanian dan perdagangan pangan.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>⚠️ Tantangan</h3>
+                        <ul>
+                            <li>Perbedaan kepentingan yang bisa menimbulkan negosiasi panjang.</li>
+                            <li>Ketergantungan pada salah satu negara.</li>
+                            <li>Pergantian kebijakan pemerintah yang dapat mengubah kesepakatan.</li>
+                            <li>Tekanan geopolitik dari negara lain.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🤝 Peran dan Kontribusi</h3>
+                        <ul>
+                            <li>Membuka peluang investasi dan perdagangan bagi negara masing-masing.</li>
+                            <li>Menguatkan jaringan diplomatik dan ekonomi regional.</li>
+                            <li>Mendukung pembangunan nasional melalui teknologi, pendidikan, dan pertanian.</li>
+                            <li>Menjadi dasar bagi kerja sama yang lebih luas seperti regional atau multilateral.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="kerjasama-image">
+                    <img src="prabowomalay.jpg" alt="Detail Kerja Sama Bilateral">
+                    <div class="kerjasama-caption">
+                        <h4>Info Tambahan</h4>
+                        <p>Kerja sama bilateral memungkinkan Indonesia untuk mendapatkan akses langsung ke teknologi dan investasi dari negara mitra, sekaligus memperkuat posisi diplomatik di kancah internasional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Regional" class="kerjasama-type regional-section">
+            <div class="kerjasama-type-header">
+                <h2>Regional</h2>
+            </div>
+            
+            <div class="kerjasama-content">
+                <div class="kerjasama-text">
+                    <div class="kerjasama-category">
+                        <h3>📖 Pengertian</h3>
+                        <p>Kerja sama regional adalah kerja sama antara negara-negara dalam satu kawasan tertentu, seperti Asia Tenggara atau Eropa, yang memiliki kesamaan geografis, budaya, kepentingan ekonomi, atau sejarah.</p>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🎯 Ciri-ciri</h3>
+                        <ul>
+                            <li>Anggotanya berasal dari wilayah atau kawasan yang sama.</li>
+                            <li>Memiliki tujuan bersama untuk kemajuan kawasan.</li>
+                            <li>Fokus pada isu yang relevan secara regional, seperti perdagangan, keamanan, kesehatan, dan pendidikan.</li>
+                            <li>Dibentuk melalui organisasi atau perjanjian regional (misalnya ASEAN, Uni Eropa).</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>💫 Tujuan dan Manfaat</h3>
+                        <ul>
+                            <li>Meningkatkan stabilitas politik dan keamanan kawasan.</li>
+                            <li>Memperkuat perdagangan antarnegara regional.</li>
+                            <li>Mempermudah mobilitas barang, jasa, dan manusia.</li>
+                            <li>Mendorong pembangunan bersama melalui program pendidikan, kesehatan, dan infrastruktur.</li>
+                            <li>Memperkuat posisi kawasan di tingkat global.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🌏 Contoh Konkret</h3>
+                        <ul>
+                            <li>ASEAN: kerja sama negara-negara Asia Tenggara di bidang ekonomi, keamanan, dan pendidikan.</li>
+                            <li>Uni Eropa (EU): integrasi ekonomi dan politik negara-negara Eropa, termasuk pasar bebas dan mobilitas penduduk.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>⚠️ Tantangan</h3>
+                        <ul>
+                            <li>Perbedaan tingkat kemajuan ekonomi antarnegara anggota.</li>
+                            <li>Konflik kepentingan dalam pengambilan keputusan.</li>
+                            <li>Pengaruh geopolitik dari negara besar luar kawasan.</li>
+                            <li>Masalah batas negara dan isu keamanan regional.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🤝 Peran dan Kontribusi</h3>
+                        <ul>
+                            <li>Memperkuat solidaritas negara-negara dalam kawasan.</li>
+                            <li>Mendorong pembangunan ekonomi regional.</li>
+                            <li>Menjadi wadah dialog untuk menyelesaikan isu bersama.</li>
+                            <li>Menghubungkan kawasan dengan dunia internasional melalui kerja sama global.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="kerjasama-image">
+                    <img src="regional.jpg" alt="Detail Kerja Sama Regional">
+                    <div class="kerjasama-caption">
+                        <h4>Info Tambahan</h4>
+                        <p>Melalui ASEAN, Indonesia aktif dalam berbagai program regional yang mendukung pembangunan berkelanjutan dan stabilitas kawasan Asia Tenggara.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Multilateral" class="kerjasama-type multilateral-section">
+            <div class="kerjasama-type-header">
+                <h2>Multilateral</h2>
+            </div>
+            
+            <div class="kerjasama-content">
+                <div class="kerjasama-text">
+                    <div class="kerjasama-category">
+                        <h3>📖 Pengertian</h3>
+                        <p>Kerja sama multilateral adalah kerja sama yang melibatkan banyak negara melalui organisasi internasional seperti PBB, WTO, WHO, atau IMF untuk mengatasi masalah global yang membutuhkan kolaborasi bersama.</p>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🎯 Ciri-ciri</h3>
+                        <ul>
+                            <li>Melibatkan lebih dari dua negara.</li>
+                            <li>Biasanya dilakukan melalui organisasi internasional yang memiliki aturan dan keanggotaan yang jelas.</li>
+                            <li>Menghasilkan kesepakatan atau kebijakan yang berlaku bagi semua anggota.</li>
+                            <li>Setiap negara, baik besar maupun kecil, memiliki hak suara dalam pengambilan keputusan.</li>
+                            <li>Fokus pada isu global seperti perdagangan, iklim, kesehatan, dan keamanan.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>💫 Tujuan dan Manfaat</h3>
+                        <ul>
+                            <li>Menangani masalah global yang tidak bisa diselesaikan oleh satu negara, seperti perubahan iklim dan pandemi.</li>
+                            <li>Meningkatkan stabilitas dan perdamaian dunia.</li>
+                            <li>Mempermudah akses bantuan bagi negara-negara berkembang.</li>
+                            <li>Membangun aturan internasional yang adil untuk perdagangan, kesehatan, dan keamanan.</li>
+                            <li>Memperkuat kerja sama antarnegara melalui platform dialog terbuka.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🌏 Contoh Konkret</h3>
+                        <ul>
+                            <li>PBB (UN): mengatur perdamaian, lingkungan, kemanusiaan, dan hak asasi manusia.</li>
+                            <li>WHO: menangani kesehatan global, pandemi, dan program vaksinasi.</li>
+                            <li>WTO: mengatur perdagangan dunia.</li>
+                            <li>IMF: menyediakan bantuan keuangan dan stabilitas ekonomi internasional.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>⚠️ Tantangan</h3>
+                        <ul>
+                            <li>Perbedaan kepentingan dan politik antarnegara anggota.</li>
+                            <li>Dominasi negara besar yang bisa mempengaruhi keputusan.</li>
+                            <li>Proses keputusan yang lambat karena melibatkan banyak pihak.</li>
+                            <li>Keterbatasan dana atau komitmen negara anggota dalam menjalankan program.</li>
+                        </ul>
+                    </div>
+
+                    <div class="kerjasama-category">
+                        <h3>🤝 Peran dan Kontribusi</h3>
+                        <ul>
+                            <li>Memberikan forum bagi negara-negara untuk berdiskusi dan mencari solusi global.</li>
+                            <li>Menyediakan bantuan teknis, keuangan, dan kemanusiaan.</li>
+                            <li>Menetapkan standar dan aturan internasional.</li>
+                            <li>Mendorong solidaritas global dalam menghadapi krisis bersama.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="kerjasama-image">
+                    <img src="multilateral.jpg" alt="Detail Kerja Sama Multilateral">
+                    <div class="kerjasama-caption">
+                        <h4>Info Tambahan</h4>
+                        <p>Indonesia aktif dalam berbagai forum multilateral seperti PBB untuk menyuarakan kepentingan negara berkembang dan berkontribusi dalam penyelesaian masalah global.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Refleksi" class="refleksi-section">
+    <div class="refleksi-container">
+        <div id="Kesimpulan" class="kesimpulan">
+            <div class="kesimpulan-header">
+                <h1>Kesimpulan</h1>
+            </div>
+            <div class="kesimpulan-content">
+                <div class="kesimpulan-text">
+                    <p>SDGs adalah rencana aksi global dengan 17 tujuan terintegrasi untuk mengakhiri kemiskinan, mengurangi kesenjangan, dan melindungi lingkungan pada 2030. Mencapai tujuan-tujuan ini, seperti Pendidikan Berkualitas (SDG 4), membutuhkan komitmen dan strategi yang mengatasi tantangan seperti kesenjangan ekonomi, akses, dan kualitas pengajaran.</p>
+                    
+                    <p>Kerjasama dalam berbagai bentuk, mulai dari bilateral, regional, hingga multilateral, merupakan kunci untuk memobilisasi sumber daya, teknologi, dan pengetahuan. Kolaborasi ini memungkinkan negara-negara saling mendukung dalam membangun infrastruktur, memperbaiki tata kelola, dan menciptakan inovasi.</p>
+                    
+                    <p>Dengan memanfaatkan potensi seperti teknologi dan populasi muda, serta peran aktif masyarakat, tujuan SDGs dapat diwujudkan. Setiap aksi nyata, baik dari pemerintah, sekolah, maupun individu, berkontribusi pada pembangunan yang inklusif dan berkelanjutan. Pada akhirnya, masa depan bumi dan kesejahteraan generasi mendatang bergantung pada komitmen kolektif kita hari ini.</p>
+                </div>
+                <div class="kesimpulan-icon">
+                    <div class="icon-circle"><img src="Cat Pixel Sticker.gif" class="cat-gif"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="Saya" class="saya">
+            <div class="saya-header">
+                <h1>Tentang Saya</h1>
+            </div>
+            <div class="saya-content">
+                <div class="saya-image">
+                    <div class="profile-circle">
+                        <img src="queenvi.jpeg">
+                    </div>
+                </div>
+                <div class="saya-text">
+                    <p>Halo semuanya! Nama saya Queenvi. Saya membuat website ini dengan tujuan sebagai wujud kepedulian dan kontribusi nyata untuk menyebarluaskan pemahaman tentang Tujuan Pembangunan Berkelanjutan (SDGs). Melalui web ini, saya berharap dapat mengedukasi masyarakat tentang pentingnya SDGs dan menginspirasi lebih banyak orang untuk terlibat dalam aksi nyata, baik secara individu maupun melalui kerjasama, demi mewujudkan masa depan yang lebih baik bagi semua!</p>
+                    
+                    <div class="saya-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Nama:</span>
+                            <span class="detail-value">Queenvi</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Kelas:</span>
+                            <span class="detail-value">IX-2</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">No:</span>
+                            <span class="detail-value">29</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="DaftarPustaka" class="pustaka">
+    <div class="pustaka-container">
+        <div class="pustaka-header">
+            <h1>Daftar Pustaka</h1>
+        </div>
+        <div class="pustaka-content">
+            <div class="pustaka-grid">
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">🌍</div>
+                    <div class="pustaka-info">
+                        <h3>Sumber Resmi SDGs PBB</h3>
+                        <p class="pustaka-link">https://sdgs.un.org/goals</p>
+                        <p class="pustaka-date">Senin, 18 November 2024 - 17:30 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">🇮🇩</div>
+                    <div class="pustaka-info">
+                        <h3>Bappenas - SDGs Indonesia</h3>
+                        <p class="pustaka-link">https://sdgs.bappenas.go.id</p>
+                        <p class="pustaka-date">Selasa, 19 November 2024 - 18:45 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">📊</div>
+                    <div class="pustaka-info">
+                        <h3>World Bank SDGs Analysis</h3>
+                        <p class="pustaka-link">https://www.worldbank.org/sdgs</p>
+                        <p class="pustaka-date">21 November 2024 - 19:15 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">🤝</div>
+                    <div class="pustaka-info">
+                        <h3>UNDP Partnership Guidelines</h3>
+                        <p class="pustaka-link">https://www.undp.org/sdg-partnerships</p>
+                        <p class="pustaka-date">26 November 2024 - 20:30 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">🎓</div>
+                    <div class="pustaka-info">
+                        <h3>UNESCO Education for SDGs</h3>
+                        <p class="pustaka-link">https://en.unesco.org/sdgs-education</p>
+                        <p class="pustaka-date">18 November 2024 - 16:00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">⚡</div>
+                    <div class="pustaka-info">
+                        <h3>SDGs Action Campaign</h3>
+                        <p class="pustaka-link">https://www.sdgsactioncampaign.org</p>
+                        <p class="pustaka-date">22 November 2024 - 16:39 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">📈</div>
+                    <div class="pustaka-info">
+                        <h3>UN Sustainable Development Report</h3>
+                        <p class="pustaka-link">https://dashboards.sdgindex.org</p>
+                        <p class="pustaka-date">17 November 2024 - 08:48 WIB</p>
+                    </div>
+                </div>
+
+                <div class="pustaka-card">
+                    <div class="pustaka-icon">🌱</div>
+                    <div class="pustaka-info">
+                        <h3>UN Environment Programme</h3>
+                        <p class="pustaka-link">https://www.unep.org/sustainable-development-goals</p>
+                        <p class="pustaka-date">22 November 2024 - 8:55 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="back-to-beranda-container">
+    <div class="back-to-beranda">
+        <a href="#top">⬆ Kembali ke Beranda</a>
+    </div>
+</div>
+
+<section>
+  <footer class="footer"> 
+        <p>Dibuat oleh QUEENVI 92/29</p>
+    </footer>
+</section>
+
+</body>
+</html>
